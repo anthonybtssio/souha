@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Souha Abou Hable – Physiothérapeute à Petit-Lancy, Genève</title>
+  <meta name="description" content="Souha Abou Hable, physiothérapeute indépendante à Petit-Lancy (Genève) : physiothérapie générale et maxillo-faciale. Consultations en français, arabe et anglais. Tél. 078 880 91 63.">
+  <meta name="theme-color" content="#0B4A8F">
+  <!-- Remplacer VOTRE-DOMAINE.ch par le domaine réel (voir README) -->
+  <link rel="canonical" href="https://VOTRE-DOMAINE.ch/">
+  <link rel="alternate" hreflang="fr" href="https://VOTRE-DOMAINE.ch/">
+  <link rel="alternate" hreflang="en" href="https://VOTRE-DOMAINE.ch/?lang=en">
+  <link rel="alternate" hreflang="ar" href="https://VOTRE-DOMAINE.ch/?lang=ar">
+  <link rel="alternate" hreflang="x-default" href="https://VOTRE-DOMAINE.ch/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_CH">
+  <meta property="og:title" content="Souha Abou Hable – Physiothérapeute à Petit-Lancy, Genève">
+  <meta property="og:description" content="Physiothérapie générale et maxillo-faciale à Petit-Lancy (Genève). Français, arabe, anglais.">
+  <meta property="og:url" content="https://VOTRE-DOMAINE.ch/">
+
+  <meta name="geo.region" content="CH-GE">
+  <meta name="geo.placename" content="Petit-Lancy">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+Arabic:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physiotherapist",
+    "name": "Souha Abou Hable – Physiothérapeute",
+    "description": "Physiothérapeute indépendante : physiothérapie générale et physiothérapie maxillo-faciale.",
+    "url": "https://VOTRE-DOMAINE.ch/",
+    "telephone": "+41 78 880 91 63",
+    "email": "mailto:souhabre@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Route de Chancy 59C",
+      "postalCode": "1213",
+      "addressLocality": "Petit-Lancy",
+      "addressRegion": "GE",
+      "addressCountry": "CH"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Lancy" },
+      { "@type": "City", "name": "Genève" }
+    ],
+    "knowsLanguage": ["fr", "ar", "en"],
+    "availableService": [
+      { "@type": "MedicalTherapy", "name": "Physiothérapie générale" },
+      { "@type": "MedicalTherapy", "name": "Physiothérapie maxillo-faciale" },
+      { "@type": "MedicalTherapy", "name": "Physiothérapie respiratoire" }
+    ],
+    "employee": {
+      "@type": "Person",
+      "name": "Souha Abou Hable",
+      "jobTitle": "Physiothérapeute",
+      "knowsLanguage": ["fr", "ar", "en"],
+      "memberOf": { "@type": "Organization", "name": "Physioswiss", "url": "https://www.physioswiss.ch/" }
+    }
+  }
+  </script>
+
+  <script type="importmap">
+  { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+  </script>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Aller au contenu</a>
+
+  <!-- Scène 3D (desktop) – décorative -->
+  <canvas id="scene" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Souha Abou Hable – accueil">
+        <img src="assets/favicon.svg" alt="" width="32" height="32">
+        <span>
+          <strong>Souha Abou Hable</strong>
+          <small data-i18n="brand.role">Physiothérapeute</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="sr-only" data-i18n="nav.menu">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navigation principale" data-i18n-attr="aria-label:nav.label">
+        <ul>
+          <li><a href="#parcours" data-i18n="nav.about">Parcours</a></li>
+          <li><a href="#domaines" data-i18n="nav.domains">Domaines</a></li>
+          <li><a href="#maxillo" data-i18n="nav.maxillo">Maxillo-facial</a></li>
+          <li><a href="#langues" data-i18n="nav.languages">Langues</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="lang-switch" role="group" aria-label="Langue du site" data-i18n-attr="aria-label:nav.lang">
+          <button type="button" data-lang="fr" lang="fr" aria-pressed="true">FR</button>
+          <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+          <button type="button" data-lang="ar" lang="ar" aria-pressed="false">ع</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 1. HERO -->
+    <section class="hero" id="accueil" data-scene="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Physiothérapeute indépendante · Petit-Lancy, Genève</p>
+          <h1 id="hero-title">Souha <span>Abou Hable</span></h1>
+          <p class="lead" data-i18n="hero.lead">Physiothérapie générale et physiothérapie maxillo-faciale au Centre Médical de Lancy / Maison de Santé Lancy.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact" data-i18n="hero.cta">Prendre contact</a>
+            <a class="btn btn-ghost" href="tel:+41788809163">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+              <span dir="ltr">078 880 91 63</span>
+            </a>
+          </div>
+          <ul class="hero-langs" aria-label="Langues parlées" data-i18n-attr="aria-label:lang.title">
+            <li lang="fr">FR</li><li lang="ar">AR</li><li lang="en">EN</li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <img class="fallback-visual" src="assets/spine.svg" alt="" width="320" height="560">
+        </div>
+      </div>
+      <a class="scroll-hint" href="#parcours" aria-label="Défiler vers le parcours" data-i18n-attr="aria-label:hero.scroll"><span aria-hidden="true"></span></a>
+    </section>
+
+    <!-- 2. PARCOURS -->
+    <section class="section" id="parcours" data-scene="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-intro reveal">
+          <p class="eyebrow" data-i18n="about.eyebrow">À propos</p>
+          <h2 id="about-title" data-i18n="about.title">Parcours</h2>
+          <p data-i18n="about.intro">Diplômée en physiothérapie à Beyrouth en 1999, Souha Abou Hable pratique la physiothérapie générale à Genève depuis 2017 et fait partie, depuis 2019, de l'équipe de physiothérapeutes de la Fondation Clair Bois – Petit-Lancy.</p>
+
+          <div class="profile-card">
+            <!-- Espace réservé : remplacer par une photo réelle de la praticienne (assets/photo.jpg) -->
+            <div class="avatar" role="img" aria-label="Emplacement réservé pour la photo de la praticienne" data-i18n-attr="aria-label:about.photo">
+              <svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="46" r="22"/><path d="M18 112c4-24 22-36 42-36s38 12 42 36"/></svg>
+            </div>
+            <div>
+              <p class="profile-name">Souha Abou Hable</p>
+              <p class="profile-role" data-i18n="about.card.role">Physiothérapeute indépendante</p>
+              <p class="profile-spec" data-i18n="about.card.spec">Physiothérapie générale · Physiothérapie maxillo-faciale</p>
+              <a class="text-link physioswiss-link" href="https://www.physioswiss.ch/" target="_blank" rel="noopener" data-i18n="about.card.physioswiss">Membre référencée sur Physioswiss</a>
+            </div>
+          </div>
+        </div>
+
+        <ol class="timeline" aria-label="Chronologie du parcours" data-i18n-attr="aria-label:about.timeline">
+          <li class="tl-item reveal">
+            <span class="tl-year">1999</span>
+            <div class="tl-card">
+              <h3 data-i18n="tl.1999.title">Diplôme de physiothérapie</h3>
+              <p data-i18n="tl.1999.text">Beyrouth, Liban</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-year" data-i18n="tl.2017.label">Depuis 2017</span>
+            <div class="tl-card">
+              <h3 data-i18n="tl.2017.title">Physiothérapie générale à Genève</h3>
+              <p data-i18n="tl.2017.text">Pratique de la physiothérapie générale à Genève.</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-year" data-i18n="tl.2019.label">Depuis 2019</span>
+            <div class="tl-card">
+              <h3 data-i18n="tl.2019.title">Fondation Clair Bois – Petit-Lancy</h3>
+              <p data-i18n="tl.2019.text">Membre de l'équipe de physiothérapeutes.</p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-year" data-i18n="tl.form.label">Formations</span>
+            <div class="tl-card">
+              <h3 data-i18n="tl.form.title">Formations continues</h3>
+              <ul class="tl-list">
+                <li><time datetime="2018">2018</time> <span data-i18n="tl.form.1">Thérapie manuelle de l'épaule</span></li>
+                <li><time datetime="2018">2018</time> <span data-i18n="tl.form.2">Kinésiotaping</span></li>
+                <li><time datetime="2021">2021</time> <span data-i18n="tl.form.3">Physiothérapie respiratoire</span></li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 3. DOMAINES -->
+    <section class="section section-tint" id="domaines" data-scene="domains" aria-labelledby="domains-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow" data-i18n="dom.eyebrow">Prise en charge</p>
+          <h2 id="domains-title" data-i18n="dom.title">Domaines de prise en charge</h2>
+          <p data-i18n="dom.intro">Une prise en charge en physiothérapie pour les personnes présentant :</p>
+        </header>
+
+        <ul class="cards">
+          <li class="card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M14 8a5 5 0 0 1 7 7l12 12a5 5 0 1 1 7 7 5 5 0 1 1-7 7 5 5 0 0 1-7-7L14 22a5 5 0 1 1-7-7 5 5 0 0 1 7-7z"/></svg>
+            </span>
+            <h3 data-i18n="dom.msk.title">Troubles musculosquelettiques</h3>
+            <p data-i18n="dom.msk.text">Muscles, articulations, tendons et colonne vertébrale.</p>
+          </li>
+          <li class="card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M24 10c-3-4-12-3-12 4-5 1-6 8-2 10-2 5 3 9 7 7 1 4 7 5 7 1V10z"/><path d="M24 10c3-4 12-3 12 4 5 1 6 8 2 10 2 5-3 9-7 7-1 4-7 5-7 1"/><path d="M24 38v4"/></svg>
+            </span>
+            <h3 data-i18n="dom.neuro.title">Atteintes neurologiques</h3>
+            <p data-i18n="dom.neuro.text">Physiothérapie en cas d'atteinte du système nerveux.</p>
+          </li>
+          <li class="card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M18 42V28l-4-6V10a2 2 0 0 1 4 0v9M18 19V7a2 2 0 0 1 4 0v12M22 19V6a2 2 0 0 1 4 0v13M26 19V8a2 2 0 0 1 4 0v14l3-4a2 2 0 0 1 3 3l-6 9v12"/><circle cx="20" cy="13" r="1.5"/><circle cx="28" cy="14" r="1.5"/></svg>
+            </span>
+            <h3 data-i18n="dom.rhuma.title">Atteintes rhumatismales</h3>
+            <p data-i18n="dom.rhuma.text">Accompagnement en physiothérapie des affections rhumatismales.</p>
+          </li>
+          <li class="card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M8 30c4-10 10-14 16-14s12 4 16 14"/><path d="M14 30c3-6 6-8 10-8s7 2 10 8"/><path d="M6 34h36"/><path d="M24 8v8"/><circle cx="24" cy="6" r="2"/></svg>
+            </span>
+            <h3 data-i18n="dom.nm.title">Maladies neuro-musculaires</h3>
+            <p data-i18n="dom.nm.text">Physiothérapie adaptée aux maladies neuro-musculaires.</p>
+          </li>
+          <li class="card reveal">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M24 6v18M24 18l-6 4M24 18l6 4"/><path d="M18 14c-6 0-10 10-10 20 0 5 3 7 6 6 4-1 4-6 4-10V14zM30 14c6 0 10 10 10 20 0 5-3 7-6 6-4-1-4-6-4-10V14z"/></svg>
+            </span>
+            <h3 data-i18n="dom.resp.title">Affections respiratoires</h3>
+            <p data-i18n="dom.resp.text">Physiothérapie respiratoire.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4. MAXILLO-FACIAL -->
+    <section class="section maxillo" id="maxillo" data-scene="maxillo" aria-labelledby="maxillo-title">
+      <div class="container maxillo-grid">
+        <div class="maxillo-stage" aria-hidden="true">
+          <img class="fallback-visual" src="assets/jaw.svg" alt="" width="360" height="360">
+        </div>
+        <div class="maxillo-content reveal">
+          <p class="eyebrow eyebrow-accent" data-i18n="maxi.eyebrow">Spécialité</p>
+          <h2 id="maxillo-title" data-i18n="maxi.title">Physiothérapie maxillo-faciale</h2>
+          <p class="lead" data-i18n="maxi.p1">Parmi ses spécialités, Souha Abou Hable pratique la physiothérapie maxillo-faciale.</p>
+          <p data-i18n="maxi.p2">Ce domaine de la physiothérapie concerne la région de la mâchoire, de l'articulation temporo-mandibulaire et de la face.</p>
+          <ul class="zones">
+            <li data-i18n="maxi.z1">Mâchoire</li>
+            <li data-i18n="maxi.z2">Articulation temporo-mandibulaire (ATM)</li>
+            <li data-i18n="maxi.z3">Région de la face</li>
+          </ul>
+          <a class="btn btn-primary" href="#contact" data-i18n="maxi.cta">Poser une question</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. LANGUES -->
+    <section class="section section-tint" id="langues" data-scene="languages" aria-labelledby="lang-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow" data-i18n="lang.eyebrow">Langues</p>
+          <h2 id="lang-title" data-i18n="lang.title">Langues parlées</h2>
+          <p data-i18n="lang.intro">Les séances peuvent se dérouler en français, en arabe ou en anglais.</p>
+        </header>
+        <ul class="lang-badges">
+          <li class="lang-badge reveal"><span class="lang-code">FR</span><span class="lang-name" lang="fr">Français</span></li>
+          <li class="lang-badge reveal"><span class="lang-code">AR</span><span class="lang-name" lang="ar" dir="rtl">العربية</span></li>
+          <li class="lang-badge reveal"><span class="lang-code">EN</span><span class="lang-name" lang="en">English</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. CONTACT -->
+    <section class="section" id="contact" data-scene="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+          <h2 id="contact-title" data-i18n="contact.title">Informations pratiques</h2>
+          <p data-i18n="contact.intro">Pour toute question ou pour convenir d'un rendez-vous, vous pouvez prendre contact par téléphone, par email ou via le formulaire ci-dessous.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="info-block">
+              <h3 data-i18n="contact.addr.label">Adresse</h3>
+              <address>
+                Centre Médical de Lancy / Maison de Santé Lancy<br>
+                École et foyer Clair Bois Lancy<br>
+                59 C route de Chancy<br>
+                1213 Petit-Lancy<br>
+                <span data-i18n="contact.country">Suisse</span>
+              </address>
+              <a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Route+de+Chancy+59C%2C+1213+Petit-Lancy%2C+Suisse" target="_blank" rel="noopener" data-i18n="contact.addr.route">Itinéraire</a>
+            </div>
+            <div class="info-block">
+              <h3 data-i18n="contact.phone.label">Téléphone</h3>
+              <a class="info-link" href="tel:+41788809163" dir="ltr">078 880 91 63</a>
+            </div>
+            <div class="info-block">
+              <h3 data-i18n="contact.email.label">Email</h3>
+              <a class="info-link" href="mailto:souhabre@gmail.com">souhabre@gmail.com</a>
+            </div>
+
+            <div class="map" id="map">
+              <div class="map-consent">
+                <p data-i18n="map.text">La carte est fournie par Google Maps. Son affichage peut entraîner un transfert de données vers Google.</p>
+                <button class="btn btn-ghost" type="button" id="map-load" data-i18n="map.btn">Afficher la carte</button>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <h3 data-i18n="form.title">Écrire un message</h3>
+            <div class="field">
+              <label for="f-name" data-i18n="form.name">Nom</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="120">
+            </div>
+            <div class="field">
+              <label for="f-email" data-i18n="form.email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required maxlength="160" dir="ltr">
+            </div>
+            <div class="field">
+              <label for="f-message" data-i18n="form.message">Message</label>
+              <textarea id="f-message" name="message" rows="6" required maxlength="4000"></textarea>
+            </div>
+            <!-- Piège anti-spam : doit rester vide -->
+            <div class="hp" aria-hidden="true">
+              <label for="f-honey">Ne pas remplir</label>
+              <input id="f-honey" name="_honey" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <p class="form-note" data-i18n="form.privacy">Les informations transmises servent uniquement à répondre à votre demande.</p>
+            <p class="form-note form-note-alert" data-i18n="form.urgent">Ce formulaire n'est pas destiné aux urgences. En cas d'urgence, appelez le 144.</p>
+            <button class="btn btn-primary btn-block" type="submit" data-i18n="form.submit">Envoyer</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-name">Souha Abou Hable</p>
+        <p data-i18n="footer.tagline">Physiothérapeute indépendante · Petit-Lancy, Genève</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="https://www.physioswiss.ch/" target="_blank" rel="noopener" class="physioswiss-link" data-i18n="footer.physioswiss">Fiche Physioswiss</a></li>
+        <li><button type="button" class="link-button" id="legal-open" data-i18n="footer.legal">Mentions légales</button></li>
+      </ul>
+      <p class="footer-disclaimer" data-i18n="footer.disclaimer">Site personnel de la praticienne. Ce site n'est pas le site officiel de Physioswiss, du Centre Médical de Lancy ni de la Fondation Clair Bois.</p>
+      <p class="footer-copy">© <span id="year">2026</span> Souha Abou Hable</p>
+    </div>
+  </footer>
+
+  <dialog class="legal" id="legal" aria-labelledby="legal-title">
+    <div class="legal-inner">
+      <h2 id="legal-title" data-i18n="legal.title">Mentions légales</h2>
+      <div data-i18n="legal.body">
+        <h3>Responsable du site</h3>
+        <p>Souha Abou Hable, physiothérapeute indépendante<br>59 C route de Chancy, 1213 Petit-Lancy, Suisse<br>Tél. <a href="tel:+41788809163" dir="ltr">078 880 91 63</a> · <a href="mailto:souhabre@gmail.com">souhabre@gmail.com</a></p>
+        <h3>Nature du site</h3>
+        <p>Ce site est le site personnel de la praticienne. Il n'est pas le site officiel de Physioswiss, du Centre Médical de Lancy / Maison de Santé Lancy ni de la Fondation Clair Bois.</p>
+        <h3>Contenu</h3>
+        <p>Les informations publiées ont un caractère informatif et ne remplacent pas une consultation médicale.</p>
+        <h3>Protection des données</h3>
+        <p>Les messages envoyés via le formulaire sont transmis par le service FormSubmit à l'adresse email de la praticienne et servent uniquement à répondre à la demande. La carte Google Maps n'est chargée qu'après votre accord. Ce site n'utilise pas de cookies de suivi.</p>
+        <h3>Hébergement</h3>
+        <p>[Nom et adresse de l'hébergeur à compléter]</p>
+      </div>
+      <form method="dialog">
+        <button class="btn btn-primary" type="submit" data-i18n="legal.close">Fermer</button>
+      </form>
+    </div>
+  </dialog>
+</body>
+</html>
