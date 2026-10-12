@@ -35,8 +35,9 @@ Copier tout le dossier tel quel sur n'importe quel hébergement statique : Netli
 
 ## Choix techniques
 
-- **3D** : Three.js 0.160 chargé depuis jsDelivr, géométries instanciées (une centaine de triangles par vertèbre), sans modèle à télécharger. La colonne change de position, d'échelle et d'opacité selon la section ; dans la section maxillo-faciale, les cervicales s'illuminent et une mâchoire stylisée apparaît. Elle suit aussi la souris.
-- **Repli statique** : sous 900 px de large, si `prefers-reduced-motion` est actif, ou sans WebGL, Three.js n'est pas chargé et des illustrations SVG le remplacent.
+- **3D** : Three.js 0.160 chargé depuis jsDelivr, sans modèle à télécharger. Les vertèbres s'assemblent à l'ouverture, ondulent doucement, et une onde lumineuse parcourt la colonne. La colonne suit la souris (ou l'inclinaison du téléphone sur Android). Elle fléchit et pivote avec la vitesse de défilement, et une lumière turquoise suit le curseur. D'une section à l'autre, elle change de place, de taille et d'opacité. Dans « Domaines », les vertèbres s'écartent en vue éclatée. Dans la section maxillo-faciale, les cervicales s'illuminent et une mâchoire stylisée s'ouvre et se ferme, avec des halos sur les articulations temporo-mandibulaires.
+- **Mobile** : même animation, en qualité allégée (résolution plafonnée, moins de particules, matériaux plus simples). La résolution baisse automatiquement si l'appareil peine. Sur écran tactile, la carte au centre de l'écran s'anime comme au survol.
+- **Repli statique** : si `prefers-reduced-motion` est actif, en mode économie de données, sur un appareil très modeste ou sans WebGL, Three.js n'est pas chargé et des illustrations SVG le remplacent.
 - **Langues** : FR par défaut, EN et AR (RTL) via les boutons ou `?lang=en` / `?lang=ar`. Le choix est mémorisé dans le navigateur.
 - **Vie privée** : la carte Google Maps ne se charge qu'après un clic (consentement). Le site n'a ni cookie ni outil de suivi.
 - **Accessibilité** : lien d'évitement, navigation au clavier, focus visible, `aria-live` sur le formulaire, contrastes conformes AA.

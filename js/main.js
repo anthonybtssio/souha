@@ -9,7 +9,8 @@ const root = document.documentElement;
 root.classList.add('js');
 
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-const smallScreen = window.matchMedia('(max-width: 899px)');
+// Appareils très modestes ou mode « économie de données » : visuels statiques
+const lowEnd = navigator.connection?.saveData === true || (navigator.deviceMemory !== undefined && navigator.deviceMemory < 2);
 
 const storage = {
   get(key) { try { return localStorage.getItem(key); } catch { return null; } },
@@ -154,6 +155,14 @@ document.querySelectorAll('.card').forEach((card) => {
   });
 });
 
+// Écrans tactiles : la carte au centre de l'écran prend l'état « survol »
+if (!finePointer.matches && !reduceMotion.matches) {
+  const activeObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => entry.target.classList.toggle('is-active', entry.isIntersecting));
+  }, { rootMargin: '-40% 0px -40% 0px' });
+  document.querySelectorAll('.card, .lang-badge, .tl-card').forEach((el) => activeObserver.observe(el));
+}
+
 /* ------------------------------------------------- carte (consentement) */
 
 document.getElementById('map-load').addEventListener('click', () => {
@@ -259,14 +268,14 @@ function useFallback() {
 }
 
 async function startScene() {
-  if (reduceMotion.matches || smallScreen.matches || !webglAvailable()) return useFallback();
+  if (reduceMotion.matches || lowEnd || !webglAvailable()) return useFallback();
   if (scene || loading) return;
   loading = true;
   root.classList.remove('no-3d');
   root.classList.add('has-3d');
   try {
     const { createScene } = await import('./scene.js');
-    if (reduceMotion.matches || smallScreen.matches) return useFallback();
+    if (reduceMotion.matches) return useFallback();
     scene = createScene(document.getElementById('scene'), {
       sections: [...document.querySelectorAll('[data-scene]')],
       isRTL: () => root.dir === 'rtl',
@@ -282,4 +291,3 @@ async function startScene() {
 
 startScene();
 reduceMotion.addEventListener('change', startScene);
-smallScreen.addEventListener('change', () => (smallScreen.matches ? useFallback() : startScene()));
